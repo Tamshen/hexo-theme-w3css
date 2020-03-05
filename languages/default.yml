@@ -1,0 +1,30 @@
+
+category: Categories
+tag: Tags
+
+seosite: website
+
+index:
+  #阅读更多
+  Menu: Menu
+  readmore: READ MORE
+
+
+sidebar:
+  newpost: New Post
+  tags: Tags
+  categories: Categories
+
+post:
+  Previous: Previous
+  Next: Next
+toc:
+  toc: Directory
+
+comments: 
+  notips: Comment Closed!
+
+search:
+  searchresults: Search Results
+  searchname: Search
+  Searchnotfound: Search results not found

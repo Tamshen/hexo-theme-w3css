@@ -1,0 +1,20 @@
+[
+<% dqquantity = 999999; %>
+<% site.posts.sort('date', -1).limit(dqquantity).each(function(post){ 
+    if(post.author && post.author.length > 0) { 
+        zzauthor = post.author;
+    } else {
+        zzauthor = config.author;
+     } 
+%>
+    {
+        "title": "<%= escape(post.title) %>",
+        "url": "<%= url_for(post.path) %>",
+        "time": "<%= date(post.date, config.date_format) %>",
+        "author": "<%= escape(zzauthor) %>",
+        "content": "<%= escape(strip_html(post.content)) %>"
+    },
+<% }) %>
+    {
+    }
+]

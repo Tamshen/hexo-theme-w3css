@@ -1,0 +1,16 @@
+<% if (page.searchjson) { %>
+<%- partial('_tamshen/searchjson')  %>
+<% } else{ %>
+<!DOCTYPE HTML>
+<html lang="<%=config.language%>">
+<head>
+<%- partial('_tamshen/head') %>
+</head>
+<body>
+<%- partial('_tamshen/header') %>
+<%- body %>
+<%- partial('_tamshen/footer') %>
+</body>
+<%- partial('_expansion/pjax') %>
+</html>
+<% } %>

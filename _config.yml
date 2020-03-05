@@ -1,0 +1,51 @@
+# 站标和logo
+favicon: /favicon.png
+logo: /Ts/img/ts.png
+# 菜单
+menu:
+  首页: /
+  朋友: /links
+
+
+
+# 多级菜单
+menu2:
+  -
+    title: 学习与分享
+    list:
+      App Inventor 2: /ai2
+      常用软件下载: /software
+  -
+    title: 关于
+    list:
+      关于我: /about
+
+
+# sidebar
+newpost:
+  enable: true
+  quantity: 3
+tags:
+  enable: true
+
+
+# 没有图片时的随机图片 
+# @onimgnum 随机图片数量
+# @onimg 图片地址
+onimgnum: 1
+noimg:
+- //tavx1.sinaimg.cn/large/006bfoyggy1fryxm269f8j31z418ge81.jpg
+
+
+#gitalk settings
+gitalk:
+  enable: true #用来做启用判断可以不用
+  owner: tamshen #Github 用户名,
+  repo: mysitecomment #储存评论issue的github仓库名
+  admin: tamshen #Github 用户名,
+  clientID: cae2b901d1ea6011a805 #`Github Application clientID`
+  clientSecret: 4cbdff1c5753f0dfb5345d1e10d67405d3213bc9 #`Github Application clientSecret`
+  
+#搜索文件 和 搜索页面
+searchjson: /searchjson/index.html
+searchpage: /search/

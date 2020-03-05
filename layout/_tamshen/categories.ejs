@@ -1,0 +1,31 @@
+<div class="page-tag ">
+  <div class="w3-container">
+    <% site.categories.map(function(tag){  %>
+    <% if(page.category == tag.name) { %>
+    <h4 class="tag-title" id="<%= tag.name %>"><%= __('sidebar.categories') %>: <%= tag.name %></h4>
+    <hr>
+    <div class="w3-row-padding">
+      <% tag.posts.map(function(post){  
+if(post.author && post.author.length > 0) { 
+  zzauthor = post.author;
+} else {
+  zzauthor = config.author;
+} 
+                  %>
+      <a href="<%- config.root %><%- post.path %>" title="<%- post.title || __('untitled') %>">
+        <div class="w3-container w3-margin-bottom w3-hover-opacity" title="<%= post.title %>">
+          <div class="w3-container w3-light-grey">
+            <div class="tag-title2"><strong><%= post.title || '(no title)' %></strong></div>
+            <div class="tag-info"><%= zzauthor %> <%= date(post.date, config.date_format) %></div>
+            <p class="tag-text"><%- strip_html(post.content).substring(0, 140) %></p>
+          </div>
+        </div>
+      </a>
+      <% }) %>
+    </div>
+    <% } %>
+    <% }) %>
+  </div>
+
+
+</div>
