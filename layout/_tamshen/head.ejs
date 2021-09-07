@@ -59,11 +59,13 @@ if (is_home()){
 <meta name="description" content="<%- description %>" />
 <meta name="keywords" content="<%- keywords %><% if (is_post()){ page.tags.map(function(tag) {  %><%= tag.name %>,<% });} %><%= config.title %>" />
 <link rel="icon" type="image/png" href="<%= theme.favicon %>">
-<link rel="stylesheet" href="/Ts/css/w3.css">
-<link rel="stylesheet" href="/Ts/css/monokai-sublime.min.css">
-<link rel="stylesheet" href="/Ts/css/viewer.min.css">
+<%- css([
+'Ts/css/w3.css', 
+'Ts/css/monokai-sublime.min.css', 
+'Ts/css/viewer.min.css', 
+'Ts/css/tamshen.css'
+]) %>
 <script src="/Ts/js/viewer.min.js" ></script>
-<link rel="stylesheet" href="/Ts/css/tamshen.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>var searchpage = '<%= theme.searchpage %>';var searchjson = '<%= theme.searchjson %>';</script>
