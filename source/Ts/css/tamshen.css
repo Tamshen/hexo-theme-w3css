@@ -301,6 +301,8 @@ kbd {
 
 .article img {
     max-width: 100%;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
 }
 
 /*目录*/
@@ -725,12 +727,13 @@ pre {
     background-size: cover;
     color: white;
     width: 120%;
-    -webkit-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -webkit-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+    background-color: #ececec;
 }
 
 .article-prev .prev-img:hover {
@@ -744,6 +747,7 @@ pre {
     position: absolute;
     top: 0px;
     color: white;
+    text-shadow: 0px 2px 3px #b1b1b1;
 }
 
 .article-prev .prev-text {
@@ -1043,7 +1047,8 @@ pre {
 
 .page-links .link_list .title .d {
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     white-space: nowrap;
 }
 

@@ -1,43 +1,49 @@
 # 站标和logo
-favicon: /favicon.png
-logo: /Ts/img/ts.png
+favicon: https://q.qlogo.cn/g?b=qq&nk=774024602@qq.com&s=100
+logo: https://q.qlogo.cn/g?b=qq&nk=774024602@qq.com&s=100
+
+
 # 菜单
+# 单级菜单
 menu:
-  首页: /
-  朋友: /links
-
-
+  Home: /
+  Links: /links
 
 # 多级菜单
 menu2:
   -
     title: 学习与分享
     list:
-      App Inventor 2: /ai2
-      常用软件下载: /software
+      一起学习: https://space.bilibili.com/37856001/favlist?fid=1017674001
+      分享: https://space.bilibili.com/37856001/favlist?fid=1326218501
   -
-    title: 关于
+    title: About
     list:
-      关于我: /about
+      主题(Theme): https://github.com/Tamshen/hexo-theme-w3css
+      关于我(About): /about
 
 
-# sidebar
-newpost:
-  enable: true
-  quantity: 3
-tags:
+
+# sidebar 侧边栏
+newpost: # 显示最新文章
+  enable: true # 开关
+  quantity: 3 #显示多少
+tags: #标签页
   enable: true
 
 
 # 没有图片时的随机图片 
-# @onimgnum 随机图片数量
 # @onimg 图片地址
-onimgnum: 1
 noimg:
-- //tavx1.sinaimg.cn/large/006bfoyggy1fryxm269f8j31z418ge81.jpg
+- https://tva1.sinaimg.cn/mw690/006bfoyggy1gcb4gwnop9j31400u00w2.jpg
+- https://tva1.sinaimg.cn/mw690/006bfoyggy1gcb4gw4ovkj31hc0u0gqh.jpg
+- https://tva1.sinaimg.cn/mw690/006bfoyggy1gcb4gz1b36j31hc0u0aem.jpg
+- https://tva1.sinaimg.cn/mw690/006bfoyggy1gcb4h09iqbj31hc0u0dpk.jpg
+- https://tva1.sinaimg.cn/mw690/006bfoyggy1gt1bp0rx1mj31900u0qai.jpg
+- https://tva1.sinaimg.cn/mw690/006bfoyggy1gt1bp63356j31900u00y6.jpg
+- https://tva1.sinaimg.cn/mw690/006bfoyggy1gt1bp63356j31900u00y6.jpg
 
-
-#gitalk settings
+# gitalk 评论 settings
 gitalk:
   enable: true #用来做启用判断可以不用
   owner: tamshen #Github 用户名,
@@ -46,6 +52,5 @@ gitalk:
   clientID: cae2b901d1ea6011a805 #`Github Application clientID`
   clientSecret: 4cbdff1c5753f0dfb5345d1e10d67405d3213bc9 #`Github Application clientSecret`
   
-#搜索文件 和 搜索页面
-searchjson: /searchjson/index.html
+
 searchpage: /search/
