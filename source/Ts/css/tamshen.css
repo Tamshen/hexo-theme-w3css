@@ -587,6 +587,7 @@ kbd {
 
 figure {
     margin: 1em 0;
+    background: #2d2d2d;
 }
 
 figure table, th, td {
@@ -598,8 +599,13 @@ figure .code {
 }
 
 pre {
-    padding: 8px;
-    font-size: 0.5em;
+    padding: 0;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+figure .line{
+    border: 0;
 }
 
 /*评论框问题*/
