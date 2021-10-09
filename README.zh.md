@@ -43,6 +43,10 @@ unicode: 13.0
 
 ### 使用步骤
 
+主题参考文件（source）：[Link->](https://github.com/Tamshen/hexo-theme-w3css/tree/generate/_site_post_source)
+
+#### 0.克隆或者下载本主题到hexo的themes
+
 #### 1.配置主题文件 _config.yml
 
 **请看文件内备注与说明**

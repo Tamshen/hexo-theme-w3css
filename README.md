@@ -43,6 +43,10 @@ unicode: 13.0
 
 ### Steps to use
 
+Theme reference file(source)：[Link->](https://github.com/Tamshen/hexo-theme-w3css/tree/generate/_site_post_source)
+
+#### 0. Clone or download this theme to the themes of hexo
+
 #### 1. Configure the theme file
 
 See  notes and instructions in the theme **`_config.yml`** file.
@@ -50,6 +54,8 @@ See  notes and instructions in the theme **`_config.yml`** file.
 
 
 #### 2. Create a search page
+
+
 
 Create a page and add `search: true` to the header
 
